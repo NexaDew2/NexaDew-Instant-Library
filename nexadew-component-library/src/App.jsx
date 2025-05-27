@@ -1,14 +1,12 @@
 
 import React, { useState } from 'react';
-import Dashboard from './components/Dashboard/Dashboard';
-// import {Button} from './components/Button/Button';
-import Navbar from './components/Navbar/Navbar';
+import Dashboard from './components/Dashboard';
+
 
 const App = () => {
 
   return (
     <div>
-      <Navbar />
       <Dashboard />
     </div>
   );
