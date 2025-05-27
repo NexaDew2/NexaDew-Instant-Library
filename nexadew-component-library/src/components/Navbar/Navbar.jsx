@@ -130,6 +130,7 @@ const tailwindSpacingToPx = {
   "h-44": 176,
   "h-48": 192,
   "h-52": 208,
+  "h-56": 224,
   // add more as needed
 };
 
