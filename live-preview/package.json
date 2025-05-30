@@ -1,13 +1,16 @@
 {
-  "name": "live-preview",
-  "private": true,
-  "version": "0.0.0",
+  "private": true, 
   "type": "module",
+  "name": "nexadew-live-preview",
+  "version": "1.0.0",
+  "description": "Live preview for NexaDew component designs",
+  "main": "src/main.jsx",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
+    "install-components": "node scripts/install-components.js",
+    "lint": "eslint .",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -15,7 +18,7 @@
     "@tailwindcss/vite": "^4.1.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "tailwindcss": "^4.1.7"
+    "react-jsx-parser": "^2.4.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.27.2",
@@ -49,6 +52,7 @@
     "playwright": "^1.52.0",
     "prop-types": "^15.8.1",
     "storybook": "^8.6.14",
+    "tailwindcss": "^4.1.7",
     "vite": "^6.3.5",
     "vitest": "^3.1.4"
   },
@@ -56,5 +60,19 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
+  },
+  "nexadew": {
+    "components": {
+      "Button": "./src/components/Button.jsx",
+      "Navbar": "./src/components/Navbar/Navbar.jsx",
+      "Hero": "./src/components/Hero/Hero.jsx",
+      "Card": "./src/components/Card/Card.jsx",
+      "Container": "./src/components/Container/Container.jsx",
+      "Input": "./src/components/Input/Input.jsx",
+      "Text": "./src/components/Text/Text.jsx",
+      "Image": "./src/components/Image/Image.jsx",
+      "Footer": "./src/components/Footer/Footer.jsx",
+      "Grid": "./src/components/Grid/Grid.jsx"
+    }
   }
 }
